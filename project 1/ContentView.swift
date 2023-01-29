@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
-   @State var tapCount = 0
+   @State private var name = ""
+
+   @State private var tapCount = 0
 
     var body: some View {
         NavigationView{
@@ -23,20 +24,21 @@ struct ContentView: View {
                 
                 }
                 
-            Text("Hello, world!")
             }
-            Text("Hello, world!")
-            Text("Hello, world!")
             Section{
-            
-            Text("Hello, world!")
+            TextField("Enter your name", text: $name)
+
+            Text("Your name is \(name)")
             }
             
-            Text("Hello, world!")
         }
+        .navigationTitle("First APP")
+        .navigationBarTitleDisplayMode(.inline)
+            
             
     }
-    }
+       
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
