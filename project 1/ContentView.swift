@@ -17,7 +17,11 @@ struct ContentView: View {
             }
             Text("Hello, world!")
             Text("Hello, world!")
+            Section{
+            
             Text("Hello, world!")
+            }
+            
             Text("Hello, world!")
         }
             
